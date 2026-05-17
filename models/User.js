@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const bcrypt   = require('bcryptjs');
 const jwt      = require('jsonwebtoken');
 
-const ROLES     = ['superadmin', 'admin', 'supervisor', 'cashier'];
-const ROLE_RANK = { superadmin: 4, admin: 3, supervisor: 2, cashier: 1 };
+const ROLES     = ['superadmin', 'admin', 'supervisor', 'cashier', 'customer'];
+const ROLE_RANK = { superadmin: 4, admin: 3, supervisor: 2, cashier: 1, customer: 0 };
 
 const userSchema = new mongoose.Schema(
   {
